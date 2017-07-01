@@ -15,11 +15,11 @@ label: blog
 
 <div class="blog-navigation-buttons">
 	{% if page.previous %}
-	<a class="button  prev-post-button" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Prev Post</a>
+	<a class="button  prev-post-button" href="{{site.baseurl}}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Prev Post</a>
 	{% endif %}
 
 	{% if page.next %}
-	<a class="button  next-post-button" href="{{ page.next.url }}" title="{{ page.next.title }}">Next Post &rarr;</a>
+	<a class="button  next-post-button" href="{{site.baseurl}}{{ page.next.url }}" title="{{ page.next.title }}">Next Post &rarr;</a>
 	{% endif %}
 </div>
 
