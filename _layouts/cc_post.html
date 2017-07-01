@@ -1,52 +1,33 @@
 ---
-layout: base
+layout: cc_default
+name: blog
+label: blog
 ---
+<article>
+	<h2 class="post-title">{{ page.title }}</h2>
+	<div class="post-meta">{{ page.date | date: "%B %d, %Y" }}</div>
 
-{% include header.html type="post" %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	<div class="post-content">{{ content }}</div>
 
-      <article role="main" class="blog-post">
-        {{ content }}
-      </article>
+	{% include share_bar.html %}
+</article>
 
-      {% if page.tags.size > 0 %}
-        <div class="blog-tags">
-          Tags:
-          {% if site.link-tags %}
-          {% for tag in page.tags %}
-            <a href="/tag/{{ tag }}">{{ tag }}</a>
-          {% endfor %}
-          {% else %}
-            {{ page.tags | join: ", " }}
-          {% endif %}
-        </div>
-      {% endif %}
+<div class="blog-navigation-buttons">
+	{% if page.previous %}
+	<a class="button  prev-post-button" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Prev Post</a>
+	{% endif %}
 
-      {% if page.social-share %}
-        {% include social-share.html %}
-      {% endif %}
-
-      <ul class="pager blog-pager">
-        {% if page.previous.url %}
-        <li class="previous">
-          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-        </li>
-        {% endif %}
-        {% if page.next.url %}
-        <li class="next">
-          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-        </li>
-        {% endif %}
-      </ul>
-
-      {% if page.comments %}
-        <div class="disqus-comments">
-          {% include disqus.html %}
-        </div>
-      {% endif %}
-    </div>
-  </div>
+	{% if page.next %}
+	<a class="button  next-post-button" href="{{ page.next.url }}" title="{{ page.next.title }}">Next Post &rarr;</a>
+	{% endif %}
 </div>
+
+<div class="comment-box">
+    <h3>Comments</h3>
+    <hr/>
+	{% include disqus.html %}
+</div>
+
+
+<div class="bring-to-top">TOP</div>
