@@ -1,6 +1,6 @@
 ---
 layout: cc_post
-title: To be
+title: Try
 subtitle: ... or not to be?
 ---
 
