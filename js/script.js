@@ -123,3 +123,5 @@
 		}
 		lastSearchResultHash = currentResultHash;
 	});
+
+})();
