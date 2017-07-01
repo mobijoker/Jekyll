@@ -1,5 +1,5 @@
 ---
-layout: cc_post
+layout: post
 title: To be
 subtitle: ... or not to be?
 ---
