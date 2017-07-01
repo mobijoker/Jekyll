@@ -4,13 +4,13 @@ title: Blog
 label: blog
 ---
 
-{% for cc_post in site.posts %}
+{% for post in site.posts %}
 
-<article class="list-item {% if cc_post.link %}list-item--external{% endif %}">
-	<h3 class="cc_post-title">
-		<a href="{% if cc_post.link %}{{ cc_post.link }}{% else %}{{site.baseurl}}{{ cc_post.url }}{% endif %}">{{ cc_post.title }}</a>
+<article class="list-item {% if post.link %}list-item--external{% endif %}">
+	<h3 class="post-title">
+		<a href="{% if post.link %}{{ post.link }}{% else %}{{site.baseurl}}{{ post.url }}{% endif %}">{{ post.title }}</a>
 	</h3>
-	<div class="post-meta">{{ cc_post.date | date: "%B %d, %Y" }}</div>
+	<div class="post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
 </article>
 
 {% endfor %}
