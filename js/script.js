@@ -58,7 +58,7 @@
 	}
 
 	var xmlhttp=new XMLHttpRequest();
-	xmlhttp.open("GET","/feed/rss.xml");
+	xmlhttp.open("GET","{{site.baseurl}}/feed/rss.xml");
 	xmlhttp.onreadystatechange = function () {
 		if (xmlhttp.readyState != 4) return;
 		if (xmlhttp.status != 200 && xmlhttp.status != 304) { return; }
