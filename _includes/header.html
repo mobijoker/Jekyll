@@ -1,4 +1,5 @@
 <!-- TODO this file has become a mess, refactor it -->
+<script type="text/javascript" src="{{site.baseurl}}/js/main.js" defer></script>
 
 {% if page.bigimg or page.title %}
 
@@ -19,7 +20,6 @@
 {% endif %}
 
 <header class="header-section {% if page.bigimg %}has-img{% endif %}">
- <script src="{{site.baseurl}}/js/main.js"></script> 
 {% if page.bigimg %}
 <div class="big-img intro-header">
   <div class="container">
@@ -75,3 +75,5 @@
 {% else %}
 <div class="intro-header"></div>
 {% endif %}
+
+
