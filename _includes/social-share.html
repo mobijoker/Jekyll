@@ -29,6 +29,51 @@
       <span class="sr-only">Twitter</span>
     </a>
   {% endif %}
+
+  {% if site.share-links-active.facebook %}
+  <!--- Share on Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.google %}
+  <!--- Share on Google Plus -->
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
+      class="btn btn-social-icon btn-google" title="Share on Google+">
+      <span class="fa fa-fw fa-google-plus" aria-hidden="true"></span>
+      <span class="sr-only">Google+</span>
+    </a>
+  {% endif %}
+
+  {% if site.share-links-active.linkedin %}
+  <!--- Share on LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  {% endif %}
+  
+   {% if site.share-links-active.pocket %}
+  <!--- Share on Pocket -->
+    <a href="https://getpocket.com/save?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      class="btn btn-social-icon btn-linkedin" title="Save on Pocket">
+      <span class="fa fa-fw fa-get-pocket" aria-hidden="true"></span>
+      <span class="sr-only">Pocket</span>
+    </a>
+  {% endif %}
+  
+   {% if site.share-links-active.flipboard %}
+  <!--- Share on Flipboard -->
+    <a href="https://share.flipboard.com/bookmarklet/popout?v=2&title={{page.title | url_encode}}&url={{site.url}}{{ page.url }}"
+      class="btn btn-social-icon btn-linkedin" title="Flip It in Flipboard">
+      <span class="fa fa-fw fa-sticky-note" aria-hidden="true"></span>
+      <span class="sr-only">Flipboard</span>
+    </a>
+  {% endif %}
   
   
 
