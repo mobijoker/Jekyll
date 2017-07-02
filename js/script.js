@@ -1,6 +1,5 @@
 ---
-title: Script for js
-	
+title: JS Stylesheet
 ---
 
 (function () {
