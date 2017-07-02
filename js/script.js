@@ -1,6 +1,4 @@
----
-title: JS Stylesheet
----
+
 
 (function () {
 	var isSearchOpen = false,
