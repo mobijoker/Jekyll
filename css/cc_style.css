@@ -1,3 +1,7 @@
+---
+title: CSS Stylesheet
+---
+
 *, *:before, *:after {
 	box-sizing: border-box;
 }
@@ -451,7 +455,7 @@ footer {
 }
 
 #me2 {
-	background-image: url(/Jekyll/img/me2.jpg);
+	background-image: url({{site.baseurl}}/img/me2.jpg);
 	background-size: contain;
 	mix-blend-mode: luminosity;
 	background-repeat: no-repeat;
