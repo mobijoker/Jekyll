@@ -173,7 +173,7 @@ figure h3 {
 
 
 #outer-container {
-	width: 750px;
+	width: 100%;
 	min-height: calc(100% - 120px);
 	margin: 0 auto;
 }
@@ -486,6 +486,8 @@ article {
 	/*background: #524C42;*/
 	padding: 10px;
 	border-radius: 5px;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 article a {
@@ -630,6 +632,8 @@ article p code {
 .blog-navigation-buttons {
 	margin-top: 40px;
 	overflow: hidden;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 .blog-navigation-buttons .button {
@@ -648,6 +652,8 @@ article p code {
 /* Comment box */
 .comment-box {
 	margin-top: 40px;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 /*
@@ -962,6 +968,8 @@ pre[class*=language-] {
   -o-background-size: cover;
   margin-top: 51px; /* The small navbar is 50px tall + 1px border */
   margin-bottom: 35px;
+  width: 105%;
+  left: -50px;
 }
 .intro-header.big-img  .big-img-transition {
   position: absolute;
