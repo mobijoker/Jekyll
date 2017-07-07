@@ -698,6 +698,7 @@ td.gutter {
 .author-img {
     border-radius: 100%;
     margin-left: -5%;
+    float: left;
 }
 
 
@@ -709,3 +710,19 @@ td.gutter {
 .read-more-content.author-info {
     margin-left: 40%;
 }
+
+
+.author-meet {
+    text-align: center;
+    padding-top: 1%;
+}
+
+.author-desc {
+    padding-left: 20%;
+}
+
+.author-info {
+    height: 150px;
+}
+
+
