@@ -3,6 +3,7 @@ layout: cc_post
 title: Flake it till you make it
 subtitle: Excerpt from Soulshaping by Jeff Brown
 bigimg: /img/path.jpg
+author: Saif
 permalink: /blog/plot-colour-helper/
 ---
 
