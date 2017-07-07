@@ -1134,10 +1134,16 @@ pre[class*=language-] {
 .author-meet {
     text-align: center;
     padding-top: 1%;
+    font-family: KG2C;
+    color: crimson;
+	
 }
 
 .author-desc {
-    padding-left: 20%;
+	padding-left: 15%;
+	font-size: 15px;
+	line-height: 1.1;
+	padding-right: 5%;
 }
 
 .author-info {
