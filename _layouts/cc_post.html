@@ -13,8 +13,11 @@ label: blog
 
 	<div class="post-content">{{ content }}</div>
 	
-	
-	{% include authors.html %}
+	{% assign author = site.data.authors_cv[page.author] %}
+	{% if author %}
+        {% include authors.html %}
+        {% endif %}
+
 	{% include cc_share_bar.html %}
 	
 </article> 
