@@ -1199,3 +1199,14 @@ pre[class*=language-] {
 	text-transform: uppercase;
 	line-height: 43px;
 }
+
+
+/* --- My Additions- Mobile --- */
+
+@media only screen and (max-width: 750px){
+	article {
+	    margin-left: 5%;
+	    margin-right: 5%;
+	}
+}
+
